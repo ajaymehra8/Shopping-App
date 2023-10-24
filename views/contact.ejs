@@ -1,0 +1,36 @@
+<%-include("partials/header.ejs")%>
+<section class="contact">
+<form action="/contact">
+   
+        <div class="mainForm">
+            <h1>Give Your Feedback</h1>
+            
+            <div class="form">
+    
+            <div class="firstField field">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name" name="name">
+        </div>
+    
+        <div class="secondField field">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" name="email">
+        </div>
+    
+     
+    
+        <div class="seventhField field">        
+            <label for="your msg">
+    write your feedback
+            </label>
+            <textarea name="your msg" placeholder="Your Feedback" cols="30" rows="10" name="User Msg"></textarea>
+        
+        </div>
+    
+    </div>
+        </div>
+<input type="submit" value="submit" class="contactBtn">  
+</form>
+</section>
+<%-include("partials/footer.ejs")%>
+

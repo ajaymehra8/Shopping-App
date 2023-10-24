@@ -1,0 +1,196 @@
+<%-include("partials/header.ejs")%>
+<section class="main">
+<div class="mainContent">
+    <h1>NEW SEASON. NEW MOOD. NEW YOU.</h1>
+    <h2>It's time to turn over a new leaf.</h2>
+    <a href="#feature" class="exploreBtn">Explore ></a>
+</div>
+</section>
+<section class="feature" id="#feature">
+    <div class="featureHeading">
+    <h1>Our Features</h1>
+    <h2>Discover Your Style: Our Outstanding Features.</h2>
+</div>
+<div class="slideshow-container">
+    <button class="prevBtn"><</button>
+
+    <div class="featureSlides">
+      
+        <div class="firstSlide featureSlide">
+            <div class="featureContent">
+                <h2>Western Wear</h2>
+                <h3>Min. 30% off</h3>
+                <a href="#">+ Explore</a>
+            </div>
+        </div>
+
+        <div class="secondSlide featureSlide">
+            <div class="featureContent">
+                <h2>Summer Wear</h2>
+                <h3>Min. 40% off</h3>
+                <a href="#">+ Explore</a>
+            </div>
+        </div>
+
+        <div class="thirdSlide featureSlide">
+            <div class="featureContent">
+                <h2>Fancy Dresses</h2>
+                <h3>Min. 20% off</h3>
+                <a href="#">+ Explore</a>
+            </div>
+        </div>
+
+        <div class="fourthSlide featureSlide">
+            <div class="featureContent">
+                <h2>Western Wear</h2>
+                <h3>Min. 30% off</h3>
+                <a href="#">+ Explore</a>
+            </div>
+        </div>
+       
+
+    </div>
+    <button class="nextBtn">></button>
+
+</div>
+
+</section>
+
+ <!-- Section 2 End -->
+
+ <!--Section 3 Start-->
+ <section class="section3 clothBrands">
+
+<h1>GRAND GLOBAL BRANDS</h1>
+
+<div class="brandSection">
+    <form id="brandForm" action="/getBrand" method="Post">
+
+    <div class="brandContent firstBrand">
+        <img src="css/img/blog/b4.jpg" alt="Brand Image" class="brandImg">
+         <div class="brandDetail">
+            <h5>globalDesi</h5>
+            <h4>Elegant Ethenic Styles</h4>
+            <h4 class="discount">Flat 65% off</h4>
+         </div> 
+         <button class="hiddenButton"  style="display: none;" type="submit" value="globalDesi" name="brand">Click Me</button>
+
+    </div>
+
+    <div class="brandContent firstBrand">
+        <img src="css/img/b10.jpg" alt="Brand Image" class="brandImg">
+         <div class="brandDetail">
+            <h5>fcuk</h5>
+            <h4>Cool Casuals</h4>
+            <h4 class="discount">Flat 25% off</h4>
+         </div> 
+         <button class="hiddenButton"  style="display: none;" type="submit" name="brand" value="fcuk">Click Me</button>
+
+    </div>
+
+    <div class="brandContent firstBrand">
+        <img src="css/img/products/f1.jpg" alt="Brand Image" class="brandImg">
+         <div class="brandDetail">
+            <h5>NAUTICA</h5>
+            <h4>Everday Go-To Finds</h4>
+            <h4 class="discount">Min. 45% off</h4>
+         </div> 
+         <button class="hiddenButton"  style="display: none;" type="submit" name="brand" value="NAUTICA">Click Me</button>
+
+    </div>
+
+    <div class="brandContent firstBrand">
+        <img src="css/img/sneakers/s1.jpg" alt="Brand Image" class="brandImg">
+         <div class="brandDetail">
+            <h5>ALDO</h5>
+            <h4>Sneakers & More</h4>
+            <h4 class="discount">Min. 25% off</h4>
+         </div> 
+         <button class="hiddenButton" name="brand" value="ALDO" style="display: none;" type="submit">Click Me</button>
+   
+    </div>
+
+    <div class="brandContent firstBrand">
+        <img src="css/img/blog/b3.jpg" alt="Brand Image" class="brandImg">
+         <div class="brandDetail">
+            <h5>GANT</h5>
+            <h4>Everday Wear</h4>
+            <h4 class="discount">Up To 65% off</h4>
+         </div> 
+         <button class="hiddenButton"  style="display: none;" type="submit"  name="brand" value="GANT">Click Me</button>
+
+    </div>
+
+</form>
+
+<!--CATEGORY  SECTION-->
+
+<h1>Shop By Category</h1>
+
+<form id="brandForm" action="/getCategory" method="Post">
+
+    <div class="brandContent firstBrand categories" >
+        <img src="css/img/products/f4.jpg" alt="Category Image" class="brandImg">
+         <div class="categoryDetail">
+            <h5>Summer Wear</h5>
+            
+            <h4 class="discount">Up to 65% off</h4>
+            <h4>Shop Now</h4>
+         </div> 
+         <button class="hiddenButton"  style="display: none;" type="submit" value="summer" name="category">Click Me</button>
+
+    </div>
+
+    <div class="brandContent firstBrand categories">
+        <img src="css/img/products/n7.jpg" alt="Category Image" class="brandImg">
+         <div class="categoryDetail">
+            <h5>Casual Collections</h5>
+            <h4 class="discount">Flat 25% off</h4>
+            <h4>Shop Now</h4>
+         </div> 
+         <button class="hiddenButton"  style="display: none;" type="submit" name="category" value="casual">Click Me</button>
+
+    </div>
+
+    <div class="brandContent firstBrand categories">
+        <img src="css/img/womens/w1.jpg" alt="Brand Image" class="brandImg">
+         <div class="categoryDetail">
+            <h5>Ethenic Wear</h5>
+            <h4 class="discount">Min. 45% off</h4>
+            <h4>Shop Now</h4>
+         </div> 
+         <button class="hiddenButton"  style="display: none;" type="submit" name="category" value="ethenic">Click Me</button>
+
+    </div>
+
+    <div class="brandContent firstBrand categories">
+        <img src="css/img/sneakers/s1.jpg" alt="Brand Image" class="brandImg">
+         <div class="categoryDetail">
+            <h5>Sneakers</h5>
+            <h4 class="discount">Min. 25% off</h4>
+            <h4>Shop Now</h4>
+         </div> 
+         <button class="hiddenButton" name="category" value="sneakers" style="display: none;" type="submit">Click Me</button>
+   
+    </div>
+
+    <div class="brandContent firstBrand categories">
+        <img src="css/img/blog/b3.jpg" alt="Brand Image" class="brandImg">
+         <div class="categoryDetail">
+            <h5>Check Stores</h5>
+            <h4 class="discount">Up To 85% off</h4>
+            <h4>Shop Now</h4>
+         </div> 
+         <button class="hiddenButton"  style="display: none;" type="submit"  name="category" value="checkStore">Click Me</button>
+
+    </div>
+
+</form>
+
+</div>
+ </section>
+
+  <!--Section 3 End-->
+  <!--Footer Section-->
+  <%-include("partials/footer.ejs")%>
+

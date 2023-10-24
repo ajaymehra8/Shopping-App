@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Mooli', sans-serif;
+    margin: 0;
+    padding: 0;
+   overflow-x: hidden;
+   box-sizing:border-box;
+   position: relative;
+    min-height: 100vh; 
+    min-width:100vw;  
+}
+/*UNiversal Style*/
+a{
+    text-decoration:none;
+    color: black;
+}
+
+
+/* Navbar Style */
+
+nav{
+    display: flex;
+    width:100vw;
+    min-width:100%;
+    /* background-color: white; */
+    padding:20px 20px 5px;
+    position: fixed;
+   
+    z-index:3;
+}
+
+.navItems{
+    display: flex;
+    list-style:none;
+    position: absolute;
+    right:150px;
+    margin-top: 5px;
+    gap:30px;
+}
+.brand{
+    color: #570D48;
+    font-size: 30px;
+}
+.navItems .navItem a{
+    text-decoration:none;
+    color: black;
+    font-size: 20px;
+}
+/* Nav Btn */
+.navBtn{
+    background: none;
+    border:none;
+    color: black;
+    font-size:40px;
+    position: absolute;
+    display: none;
+}
+
+
+/* HOME MAIN SECTION */
+
+.main{
+    width: 100vw;
+    min-width:600px;
+    height: 100vh;
+    background-image: url('img/hero4.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.homeImg{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*Main Content*/
+.mainContent{
+   
+    margin-left: 100px;
+    text-align: center;
+}
+.mainContent h1{
+    font-family:"Roboto",sans-serif;
+    color: #5D3D68;
+    font-size: 3vw;
+    width: 40vw;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.mainContent h2{
+    font-size: 2vw;
+    letter-spacing:1px;
+    margin-bottom: 20px;
+}
+/*Explore Button*/
+.exploreBtn{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 4vw;
+    letter-spacing:1px;
+}
+
+/* FEATURE SECTION */
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-width:530px;
+    height: 100vh;
+}
+
+.feature .featureHeading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature .featureHeading h1 {
+    margin-bottom: 10px;
+    font-size: 3vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #601951;
+}
+.slideshow-container {
+    width: 100vw;
+min-width:500px;
+    height: 70vh;
+   display: flex;
+   align-items: center;
+    position: relative;
+}
+
+.featureSlide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/*Slide Btns */
+.slideshow-container button{
+    width: 3vw;
+    border: none;
+     background: none;
+    font-size: 15vw;
+    color:#601951;
+
+}
+.prevBtn{
+    opacity:1;
+    position: absolute;
+    left:0;
+    z-index:0;
+}
+.nextBtn{
+    opacity: 1;
+    position: absolute;
+    right: 90px;
+    z-index:0;
+}
+.featureSlide.active {
+    opacity: 1;
+}
+
+.featureSlides {
+    display: flex;
+    justify-content: flex-start;
+    width:80vw;
+    align-items: center;
+    overflow: hidden; 
+}
+
+/* First Slide */
+
+.featureSlide {
+    width:80vw;
+    height: 70vh;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    flex-shrink:0;
+    padding-left: 90px;
+    box-sizing: border-box;/* Ensure padding doesn't add to the width */
+}
+
+
+.featureContent h2 {
+    font-size: 3vw;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.featureContent h3 {
+    font-size: 2vw;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #837156;
+}
+
+.featureContent a {
+    color: #837156;
+}
+
+/*SLIDES IMAGE */
+.firstSlide{
+    background-image: url("img/b4.jpg");
+
+}
+.secondSlide{
+    background-image: url("img/b17.jpg");
+
+}
+.secondSlide .featureContent,.thirdSlide .featureContent {
+    padding-left: 50px;
+}
+.secondSlide .featureContent h3,.secondSlide .featureContent a{
+    color:white;
+}
+.thirdSlide{
+    background-image: url("img/b18.jpg");
+}
+.thirdSlide .featureContent h3,.thirdSlide .featureContent a{
+    color:#F4C5BF;
+    
+}
+.fourthSlide{
+    background-image: url("img/b2.jpg");
+}
+.fourthSlide .featureContent{
+    position: absolute;
+    right:20px;
+}
+.fourthSlide .featureContent h3,.fourthSlide .featureContent a{
+    color: #d29177;
+}
+/* Section 2 (Slide Show End) */
+
+/*Section 3 (CLOTHES BRAND) START */
+
+.clothBrands{
+    padding-left: 60px;
+    width: 100vw;
+    min-width:530px;
+}
+.clothBrands h1{
+    margin-top: 50px;
+    font-size: 2.5vw;
+    letter-spacing:10px;
+}
+
+#brandForm{
+    margin: 40px 20px;
+    display: flex;
+    gap:25px;
+    flex-wrap: wrap;
+}
+.brandContent{
+    flex: 0 0 calc(10% - 10px);
+    flex-shrink: 0;
+}
+.brandContent:hover{
+    cursor: pointer;
+}
+.brandSection .brandImg{
+    width:16.5vw;
+    min-width:150px;
+    height: 40vh;
+}
+.brandDetail{
+    margin-top: 5px;
+    letter-spacing:1px;
+}
+.brandDetail .discount{
+    margin-top: 5px;
+    font-family:"Roboto",sans-serif;
+    font-weight:900;
+}
+.brandDetail h4{
+
+    margin-top: 5px;
+}
+.categories{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.categoryDetail{
+    text-align: center;
+    background-color: #D9522B;
+    padding:10px 0;
+    width: 90%;
+    opacity: 0.8;
+    color: white;
+    position: absolute;
+    bottom:5px;
+}
+.categoryDetail h5,.categoryDetail h4{
+    opacity: 1;
+    letter-spacing:2px;
+    margin-top: 4px;
+}
+.categoryDetail .discount{
+    font-size: 1.5vw;
+}
+/*Section 3 (CLOTHES BRAND) END  */
+
+/* FOOTER STYLE START */
+footer{
+    background: #172337;
+    width: 100vw;
+   min-width:600px;
+   
+}
+.mainULs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:90px;
+}
+.mainULs ul .mainLi{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #878787;
+}
+.mainULs ul li a{
+    margin-bottom: 15px!important;
+    color: white;
+    font-size: 12px;
+}
+.mainULs ul{
+    list-style:none;
+
+}
+.email .emailDetail{
+    color: white;
+    width: 175px;
+    line-height:1.5;
+    font-size: 12px;
+}
+.line{
+    width: 1px;
+    height: 150px;
+    background-color: white;
+    margin-top: 30px;
+}
+    /* LOWER FOOTER START */
+
+
+.lowerFooter{
+    color: white;
+    border-top: 1px solid #40495a;
+    margin-top: 10px;
+}
+.lowerFooter{
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:9px 0;
+    justify-content: center;
+}
+/* FOOTER STYLE END */
+
+ /* STARTS BRAND STYLING */
+
+ .globalDesi{
+    width: 100vw;
+    padding-top: 60px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #ffffff;
+ }
+ .globalForm{
+    justify-content: center;
+ }
+
+ /* CART FILE CSS */
+ .cart{
+    box-sizing:border-box;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+ }
+ .cart h1{
+    font-size: 3vw;
+ }
+
+ /* CONTACT FILE CSS */
+
+ 
+.contact{
+    box-sizing:border-box;
+    min-height: 70vh;
+    display: grid;
+    border: 1px solid #000;
+    color: black;
+place-items:center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+ .mainForm{
+     display: flex;
+     flex-direction:column;
+     gap:20px;
+     justify-content: center;
+     align-items: center;
+     background-color: #f3eded;
+     border: 1px solid #000;
+     padding: 2vh 10vw;
+     border-radius:20px;
+     max-width:800px;
+     text-align: start;
+     margin:0 auto;
+ }
+ .form{
+     display: flex;
+     flex-direction:column;
+     gap:20px;
+     justify-content: flex-end;
+     align-items: flex-end;
+ }
+ label{
+     display: block;
+ }
+ .field{
+     display: flex;
+     flex-direction:column;
+     gap:5px;
+     justify-content: flex-end;
+     text-transform:capitalize;
+ }
+ 
+ input,textarea{
+     height: 4vh;
+     width: 50vw;
+     padding:5px 10px;
+ }
+ .years{
+     height: 5.9vh;
+     width: 51.8vw;
+ }
+ textarea{
+     height: 20vh;
+     width: 50vw;
+ }
+ 
+ .contactBtn{
+    width: 100px;
+    padding: 3px 6px;
+    text-transform:capitalize;
+    font-size: 15px;
+
+ }
+
+ /** LOG IN PAGE **/
+ .logInMaster{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .loginForm,.signupCommand{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    border: 1px solid #000;
+  border-right:none;
+    padding:10px 20px;
+    height: 50vh;
+    width: 30vw;
+align-items:center;
+justify-content: center;
+ }
+ .loginForm input{
+    width: 20vw;
+ }
+ .loginForm h4{
+    margin-top: 20px;
+ }
+ .socialApp{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+ }
+ .socialApp img{
+width: 2vw;
+ }
+ .socialApp i{
+    font-size: 2vw;
+  
+
+ }
+ .fa-linkedin{
+    color: #0a66c2;
+ }
+ .fa-facebook{
+    color: #4867aa;
+ }
+ .logged,.signBtn{
+    font-size: 1.5vw;
+    padding: 10px 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #39a9aa;
+    color: white;
+ }
+ .signupCommand{
+    background-color: #81c9ca;
+    color: white;
+    border: 1px solid #81c9ca;
+ }
+ .signBtn{
+    background-color: white;
+    color:black;
+    text-decoration: none;
+ }
+ .logInMaster button:hover{
+    cursor: pointer;
+ }
+ .logInMaster a{
+    text-decoration:none;
+ }
+
+
+ /*** Responsive Design ***/
+ @media(max-width:800px){
+    /** nav bar **/
+    .navBtn{
+        display: block;
+       right: 150px;
+    }
+.navItems{
+    flex-direction:column;
+    background: white;
+    width: 150vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding:10px 0;
+    left:-100%;
+    transition: all .3s ease-in;
+}
+.navItems .navItem{
+    margin-top: 5px;
+}
+
+/** Main Section **/
+.main{
+    height: 100vw;
+    background-size: contain;
+}
+
+/** FEATURE SECTION **/
+
+
+.feature .featureHeading h1{
+    font-size:30px;
+}
+.featureSlide{
+height: 150px;
+width: 300px;
+padding-left:10px;
+
+}
+.slideshow-container{
+    height: 150px;
+}
+.nextBtn{
+right:30px;
+}
+.prevBtn{
+    left:50px;
+}
+/** SEction 3 (Clothes Brand) STart **/
+.clothBrands h1{
+    font-size: 20px;
+}
+.mainULs{
+    gap:20px;
+}
+ }
+ .show{
+    left:0;
+}
