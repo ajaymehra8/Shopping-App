@@ -5,10 +5,10 @@ const mongoose=require("mongoose");
 const path=require("path");
 const bodyParser = require('body-parser'); // Require body-parser
 const app=express();
-const session=require("express-session");;
-const passport=require("passport");
-const passportLocalMongoose=require("passport-local-mongoose");
-var GoogleStrategy = require('passport-google-oauth20').Strategy;
+// const session=require("express-session");;
+// const passport=require("passport");
+// const passportLocalMongoose=require("passport-local-mongoose");
+// var GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require("mongoose-findorcreate");
 
 
@@ -26,15 +26,15 @@ app.set("view engine","ejs");
 app.set("views",viewsPath);
 app.use(express.static(staticPath));
 
-app.use(session({
-    secret: 'Our relattive are dangerous',
-    resave: false,
-    saveUninitialized: false  
-})
-);
+// app.use(session({
+//     secret: 'Our relattive are dangerous',
+//     resave: false,
+//     saveUninitialized: false  
+// })
+// );
 
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.initialize());
+// app.use(passport.session());
 //connecting database
 
 mongoose.connect(process.env.CONNECT, {useNewUrlParser:true});
@@ -50,7 +50,7 @@ const myUser= new mongoose.Schema({
     secret:String
 });
 
-myUser.plugin(passportLocalMongoose);
+// myUser.plugin(passportLocalMongoose);
 myUser.plugin(findOrCreate);
 //learning encryption
 
